@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007F5F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00A8E8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A8E8;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#007F5F;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background gradient -->
+  <rect width="1200" height="800" fill="url(#bgGradient)" />
+  
+  <!-- Decorative waves -->
+  <path d="M0,600 Q300,500 600,600 T1200,600 V800 H0 Z" fill="url(#waveGradient)" />
+  <path d="M0,700 Q300,650 600,700 T1200,700 V800 H0 Z" fill="url(#waveGradient)" opacity="0.5" />
+  
+  <!-- Sun -->
+  <circle cx="1000" cy="150" r="60" fill="#FFD166" opacity="0.8" />
+  
+  <!-- Sun rays -->
+  <g stroke="#FFD166" stroke-width="2" opacity="0.6">
+    <line x1="1000" y1="50" x2="1000" y2="90" />
+    <line x1="1050" y1="100" x2="1070" y2="120" />
+    <line x1="1100" y1="150" x2="1120" y2="150" />
+    <line x1="1050" y1="200" x2="1070" y2="180" />
+    <line x1="1000" y1="250" x2="1000" y2="210" />
+    <line x1="950" y1="200" x2="930" y2="180" />
+    <line x1="900" y1="150" x2="880" y2="150" />
+    <line x1="950" y1="100" x2="930" y2="120" />
+  </g>
+  
+  <!-- Palm tree silhouette -->
+  <g transform="translate(200, 500)" fill="#006400">
+    <rect x="-5" y="0" width="10" height="150" fill="#8B4513" />
+    <path d="M-30,50 Q0,30 30,50 Q20,20 0,20 Q-20,20 -30,50 Z" />
+    <path d="M-25,40 Q0,20 25,40 Q15,10 0,10 Q-15,10 -25,40 Z" />
+    <path d="M-20,30 Q0,10 20,30 Q10,0 0,0 Q-10,0 -20,30 Z" />
+  </g>
+</svg>

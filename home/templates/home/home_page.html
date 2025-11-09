@@ -4,18 +4,30 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block extra_css %}
-
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
+{{ block.super }}
 <link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+<link rel="stylesheet" href="{% static 'css/hero.css' %}">
 {% endblock extra_css %}
 
 {% block content %}
+<div class="page-background"></div>
+<div class="content-wrapper">
+  {% include 'home/navbar.html' %}
+  
+  {% include 'home/hero.html' %}
 
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-{% include 'home/welcome_page.html' %}
-
+  <div id="content-area" class="pt-5 pt-lg-0">
+    {% comment %}
+    Delete the line below if you're just getting started and want to remove the welcome screen!
+    {% endcomment %}
+    {% include 'home/welcome_page.html' %}
+  </div>
+</div>
 {% endblock content %}
+
+{% block extra_js %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/navbar.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/hero.js' %}"></script>
+{% endblock extra_js %}

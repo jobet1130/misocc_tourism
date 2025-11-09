@@ -1,0 +1,52 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <button class="navbar-brand logo-button" data-page="home">
+      <img src="{% static 'images/logo.svg' %}" alt="Discover MisOcc Logo" class="brand-logo">
+      <div class="logo-text-container">
+        <span class="logo-text-primary">Discover</span>
+        <span class="logo-text-secondary">MisOcc</span>
+      </div>
+    </button>
+
+    <!-- Mobile Menu Button (Bootstrap) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <div class="navbar-nav ms-auto">
+        <button class="nav-link custom-nav-link" data-page="home">
+          <i class="nav-icon fas fa-home"></i>
+          Home
+        </button>
+        <button class="nav-link custom-nav-link" data-page="destinations">
+          <i class="nav-icon fas fa-map-marker-alt"></i>
+          Destinations
+        </button>
+        <button class="nav-link custom-nav-link" data-page="festivals">
+          <i class="nav-icon fas fa-calendar-alt"></i>
+          Festivals
+        </button>
+        <button class="nav-link custom-nav-link" data-page="stay">
+          <i class="nav-icon fas fa-bed"></i>
+          Where to Stay
+        </button>
+        <button class="nav-link custom-nav-link" data-page="cuisine">
+          <i class="nav-icon fas fa-utensils"></i>
+          Cuisine
+        </button>
+        <button class="nav-link custom-nav-link" data-page="about">
+          <i class="nav-icon fas fa-info-circle"></i>
+          About
+        </button>
+        <button class="nav-link custom-nav-link" data-page="contact">
+          <i class="nav-icon fas fa-envelope"></i>
+          Contact
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
